@@ -25,14 +25,17 @@ console.log("Es " + esAdulto);
 let sonido = animal === "pato" ? "cua cua" : animal === "ganso" ? "honk honk" : "sin sonido";
 console.log("Sonido: " + sonido);
 
-// Velocidad 
+// Velocidad
 let velocidad;
-if (animal === "pato") {
-    velocidad = 20;
-} else if (animal === "ganso") {
-    velocidad = 25;
-} else {
-    velocidad = 0;
+switch (animal) {
+    case "pato":
+        velocidad = 20;
+        break;
+    case "ganso":
+        velocidad = 25;
+        break;
+    default:
+        velocidad = 0;
 }
 console.log("Velocidad: " + velocidad + " km/h");
 
